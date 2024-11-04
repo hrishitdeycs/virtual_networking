@@ -24,17 +24,17 @@
 ###  Launch two EC2 instances in different AZs
 ![Screenshot (9)](https://github.com/user-attachments/assets/3d985a1a-f79f-47d3-a087-28febb549da9)
 
-### Create Classic Elastic Load Balancer
-### Click Next: Assign Security Groups
-### Click Next: Security Settings
-### Click Next: Configure Health Checks
-### Specify your default web file 
-### Click Next: Add EC2 Instances
-### Click Next: Add Tags
-### Click Review and Create
-### Click Create
-### Check instances status should be InService
-### Load Balancer DNS Name copy it and paste in web browser now fresh twice you will see response is coming from Server1 and Server2
-### Which concludes load balancer is working fine.
+### Select Application Elastic Load Balancer
+### Create 2 instances of same type with select VPC which you created and using putty download apache-2 on both 
+### Create Target group  and attach both ec2 instances we created and edit health check-ups as:-
+![HELTH](https://github.com/user-attachments/assets/91af3b9a-95fe-49a7-a3c9-dc953323cf7a)
+### Now select this target group and create load balancer 
+### Now copy your load balancers dns name and paste it in another tab and refersh twice to see it working
+### On any one instance write following commands in putty
+```bash
+seq 999999999999999999999 > /dev/null &
+```
+```bash
+htop
+```
 ![Screenshot (5)](https://github.com/user-attachments/assets/ee6678f9-b7f4-4606-893b-a338e4717f83)
-
