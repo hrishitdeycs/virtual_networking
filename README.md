@@ -26,8 +26,7 @@
 
 ### Select Application Elastic Load Balancer
 ### Create 2 instances of same type with select VPC which you created and using putty download apache-2 on both 
-### Create Target group  and attach both ec2 instances we created and edit health check-ups as:-
-![HELTH](https://github.com/user-attachments/assets/91af3b9a-95fe-49a7-a3c9-dc953323cf7a)
+### Create Target group  and attach both ec2 instances we created and edit health check-ups 
 ### Now select this target group and create load balancer 
 ### Now copy your load balancers dns name and paste it in another tab and refersh twice to see it working
 ### On any one instance write following commands in putty
